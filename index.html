@@ -177,10 +177,19 @@
   <script>
     const menuIcon = document.getElementById('menu-icon');
     const dropdown = document.getElementById('dropdown');
+    const dropdownContent = document.getElementById('dropdown-content');
 
-    menuIcon.addEventListener('click', () => {
+    menuIcon.addEventListener('click', (event) => {
+      event.stopPropagation();
       dropdown.classList.toggle('active');
       menuIcon.innerHTML = dropdown.classList.contains('active') ? '&times;' : '&#9776;';
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!dropdown.contains(event.target)) {
+        dropdown.classList.remove('active');
+        menuIcon.innerHTML = '&#9776;';
+      }
     });
   </script>
 </body>
