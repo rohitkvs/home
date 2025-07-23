@@ -11,8 +11,17 @@
       max-width: 960px;
       margin: 0 auto;
       padding: 2rem;
-      background-color: #ffffff;
+      background: #ffffff url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #000000;
+    }
+    .banner {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .banner img {
+      max-width: 300px;
+      height: auto;
     }
     header {
       display: flex;
@@ -35,8 +44,22 @@
     nav a:hover {
       text-decoration: underline;
     }
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .profile img {
+      width: 160px;
+      height: 160px;
+      border-radius: 8px;
+      margin-right: 2rem;
+    }
     main {
       margin-top: 2rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 1rem 2rem;
+      border-radius: 8px;
     }
     footer {
       margin-top: 3rem;
@@ -49,8 +72,12 @@
   </style>
 </head>
 <body>
+  <div class="banner">
+    <img src="ncstate-logo.png" alt="NC State University Logo">
+  </div>
+
   <header>
-    <h1>Your Name</h1>
+    <h1>K V S Rohit</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -60,26 +87,29 @@
     </nav>
   </header>
 
+  <div class="profile">
+    <img src="your-photo.jpg" alt="K V S Rohit's Photo">
+    <div>
+      <h2>Welcome!</h2>
+      <p>I am a Ph.D. candidate in the Department of Electrical and Computer Engineering at NC State University, where I am a Graduate Research Assistant in the <a href="https://slin23.github.io/" target="_blank">Intelligent Wireless Networking Lab</a>, directed by Prof. Shih-Chun Lin.</p>
+    </div>
+  </div>
+
   <main>
-    <h2>Welcome to my home page!</h2>
-	<p>I am a Ph.D. candidate in the Department of Electrical and Computer Engineering at NC State University, where I am a Graduate Research Assistant in the <a href="https://slin23.github.io/" target="_blank">Intelligent Wireless Networking Lab</a>, directed by Prof. Shih-Chun Lin.</p>
-	
-	<p>My research involves building proof-of-concept hardware testbeds focused on signal detection and processing in spatially distributed systems, in close collaboration with industry partners. This work has direct applications in satellite swarm communications, tactical communications, and commercial distributed systems. I have published several papers on these topics in peer-reviewed conferences.</p>
-	
-	
-	<p>In addition to research, I have actively contributed to teaching. I served as a teaching assistant for the following courses at NC State University:</p>
-	<ul>
-	  <li><strong>ECE 570: Computer Networks</strong> (2022–2025) with Prof. Shih-Chun Lin</li>
-	  <li><strong>ECE 572: Optimization and Algorithms</strong> (2022–2025) with Prof. Shih-Chun Lin</li>
-	  <li><strong>ECE 301: Signals and Systems</strong> (2021) with Prof. Robert Heath</li>
-	</ul>
-	
-	<p>Prior to joining NC State, I worked as a Junior Research Fellow at IIT Roorkee in 2019 on a smart grid project titled <em>D-SIDES</em>. I also served as a part-time Senior Research Fellow at NIT Rourkela in 2020, where I helped develop an Android application as part of a COVID-19 emergency response system.</p>
-	
-	<p>Before my academic career, I worked as a Technology Manager at Atria Convergence Technologies Pvt. Ltd., one of India’s leading internet service providers.</p>
-	
-	<p>To learn more about my research, publications, and contact information, please explore the other sections of this website.</p>
-	
+    <p>My research involves building proof-of-concept hardware testbeds focused on signal detection and processing in spatially distributed systems for beyond 5G systems, in close collaboration with industry partners. This work has direct applications in satellite swarm communications, tactical communications, and commercial distributed systems. I have published several papers on these topics in peer-reviewed conferences.</p>
+
+    <p>In addition to research, I have actively contributed to teaching. I served as a teaching assistant for the following courses at NC State University:</p>
+    <ul>
+      <li><strong>ECE 570: Computer Networks</strong> (2022–2025) with Prof. Shih-Chun Lin</li>
+      <li><strong>ECE 572: Optimization and Algorithms</strong> (2022–2025) with Prof. Shih-Chun Lin</li>
+      <li><strong>ECE 301: Signals and Systems</strong> (2021) with Prof. Robert Heath</li>
+    </ul>
+
+    <p>Prior to joining NC State, I worked as a Junior Research Fellow at IIT Roorkee in 2019 on a smart grid project titled <em>D-SIDES</em>. I also served as a part-time Senior Research Fellow at NIT Rourkela in 2020, where I helped develop an Android application as part of a COVID-19 emergency response system.</p>
+
+    <p>Before my academic career, I worked as a Technology Manager at Atria Convergence Technologies Pvt. Ltd., one of India’s leading internet service providers.</p>
+
+    <p>To learn more about my research, publications, and contact information, please explore the other sections of this website.</p>
   </main>
 
   <footer>
