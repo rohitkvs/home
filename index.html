@@ -35,14 +35,37 @@
       color: #cc0000;
       margin: 0;
     }
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropbtn {
+      background-color: #ffffff;
       color: #cc0000;
       font-weight: bold;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
     }
-    nav a:hover {
-      text-decoration: underline;
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: #cc0000;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
     .profile {
       display: flex;
@@ -78,13 +101,14 @@
         align-items: flex-start;
       }
 
-      nav {
+      .dropdown {
+        width: 100%;
         margin-top: 1rem;
       }
 
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
+      .dropbtn {
+        width: 100%;
+        text-align: left;
       }
 
       .profile {
@@ -118,13 +142,16 @@
 
   <header>
     <h1>K V S Rohit</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </header>
 
   <div class="profile">
