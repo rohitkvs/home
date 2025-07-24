@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>K V S Rohit | iWN Lab</title>
+  <title>K V S Rohit | iWN Lab | vkanthe [at] ncsu [dot] edu</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -69,37 +69,50 @@
     }
     .profile {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: flex-start;
       margin-top: 2rem;
       flex-wrap: wrap;
     }
     .profile img {
-      width: 100%;
-      max-width: 200px;
+      width: 160px;
       height: auto;
       border-radius: 8px;
-      margin-right: 2rem;
+      margin-right: 1rem;
       margin-bottom: 1rem;
     }
-    .profile-text {
-      flex: 1;
-    }
-    .profile-text h2 {
+    .profile-info-wrapper {
       display: flex;
-      align-items: center;
-      gap: 0.75rem;
+      flex-direction: row;
+      gap: 1rem;
+      align-items: stretch;
     }
-    .profile-text .social-links a img {
-      width: 24px;
-      height: 24px;
-      vertical-align: middle;
+    .profile-text-box {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 1rem;
+      border-radius: 8px;
+      max-width: 500px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-    .profile-text .social-links {
-      margin-left: 1rem;
+    .profile-links-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      gap: 0.5rem;
+      padding-top: 1rem;
     }
-    .profile-text p {
-      margin-bottom: 0.25rem;
+    .profile-links-box a img {
+      width: 20px;
+      height: 20px;
+    }
+    .profile-text-box h2 {
+      margin-top: 0;
+    }
+    .profile-text-box p {
+      margin: 0.25rem 0;
     }
     main {
       margin-top: 2rem;
@@ -130,6 +143,9 @@
       }
       .profile img {
         max-width: 100%;
+      }
+      .profile-info-wrapper {
+        flex-direction: column;
       }
       main {
         padding: 1rem;
@@ -162,19 +178,24 @@
 
   <div class="profile">
     <img src="my-photo.jpg" alt="K V S Rohit's Photo">
-    <div class="profile-text">
-      <h2>Welcome!
-        <span class="social-links">
-          <a href="https://scholar.google.com" target="_blank">
-            <img src="google-scholar.png" alt="Google Scholar">
-          </a>
-          <a href="https://linkedin.com" target="_blank">
-            <img src="linkedin.png" alt="LinkedIn">
-          </a>
-        </span>
-      </h2>
-      <p>I am a Ph.D. Candidate in the Department of Electrical and Computer Engineering at NC State University, where I am a Graduate Research Assistant in the Intelligent Wireless Networking Lab, lead by <a href="https://slin23.github.io/" target="_blank">Prof. Shih-Chun Lin</a>.</p>
-      <p>Email address: vkanthe [at] ncsu [dot] edu<br>Phone: (984)484-4994</p>
+    <div class="profile-info-wrapper">
+      <div class="profile-text-box">
+        <h2>Welcome!</h2>
+        <p>I am a Ph.D. Candidate in the Department of Electrical and Computer Engineering at NC State University, where I am a Graduate Research Assistant in the Intelligent Wireless Networking Lab, lead by <a href="https://slin23.github.io/" target="_blank">Prof. Shih-Chun Lin</a>.</p>
+        <p>Email address: vkanthe [at] ncsu [dot] edu</p>
+        <p>Phone: (984)484-4994</p>
+      </div>
+      <div class="profile-links-box">
+        <a href="https://scholar.google.com" target="_blank">
+          <img src="google-scholar.png" alt="Google Scholar">
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <img src="linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="instagram.png" alt="Instagram">
+        </a>
+      </div>
     </div>
   </div>
 
