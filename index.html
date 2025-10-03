@@ -10,51 +10,60 @@
       font-family: 'Roboto', sans-serif;
       max-width: 900px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 0;
       background: #ffffff;
       color: #000000;
       line-height: 1.6;
+    }
+    .topbar {
+      background-color: #cc0000; /* NC State red */
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+    .topbar img {
+      max-width: 220px;
+      height: auto;
     }
     header {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 2rem;
-      position: relative;
-    }
-    header img {
-      max-width: 220px;
-      height: auto;
-      margin-bottom: 1rem;
+      padding: 1rem;
     }
     .header-top {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 100%;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
     }
     .header-top h1 {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       margin: 0.5rem 0;
+      font-weight: 700;
       color: #222;
-    }
-    .hamburger {
-      background: none;
-      border: none;
-      font-size: 24px;
-      cursor: pointer;
-      color: #cc0000;
+      letter-spacing: 1px;
     }
     nav {
       position: relative;
       display: inline-block;
+    }
+    .hamburger {
+      background: none;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: #333;
     }
     .dropdown-content {
       display: none;
       position: absolute;
       right: 0;
       background-color: #f9f9f9;
-      min-width: 160px;
+      min-width: 180px;
       box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
       z-index: 1;
     }
@@ -63,6 +72,7 @@
       padding: 12px 16px;
       text-decoration: none;
       display: block;
+      font-size: 0.95rem;
     }
     .dropdown-content a:hover {
       background-color: #f1f1f1;
@@ -91,17 +101,17 @@
       margin-top: 1rem;
     }
     .links a {
-      display: block;
-      margin-bottom: 0.5rem;
+      display: inline-block;
+      margin-right: 0.5rem;
       text-decoration: none;
     }
     .links img {
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
       vertical-align: middle;
     }
     main h2 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       border-bottom: 2px solid #ccc;
       padding-bottom: 0.3rem;
       margin-top: 2rem;
@@ -111,6 +121,7 @@
       font-size: 0.85rem;
       color: #555;
       text-align: center;
+      padding: 1rem 0;
     }
     @media (max-width: 768px) {
       .profile {
@@ -121,14 +132,18 @@
         width: 150px;
       }
       .header-top h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
-  <header>
+  <div class="topbar">
     <img src="ncstate-logo-red.png" alt="NC State University Logo">
+  </div>
+
+  <header>
     <div class="header-top">
       <h1>K V S Rohit</h1>
       <nav>
@@ -142,7 +157,7 @@
   </header>
 
   <div class="profile">
-    <img src="my-photo.jpg" alt="K V S Rohit's Photo">
+    <img src="profile_picture.jpg" alt="K V S Rohit's Photo">
     <div class="profile-info">
       <p>I am a Ph.D. Candidate in the Department of Electrical and Computer Engineering at NC State University, where I am a Graduate Research Assistant in the Intelligent Wireless Networking Lab, led by <a href="https://slin23.github.io/" target="_blank">Prof. Shih-Chun Lin</a>.</p>
       <p>Email: vkanthe [at] ncsu [dot] edu</p>
