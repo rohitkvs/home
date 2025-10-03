@@ -19,7 +19,7 @@
     .content-wrapper {
       background-color: #ffffff; /* Main content background */
       margin: 0 auto;
-      padding: 0;
+      padding: 1.5rem 2rem; /* Add gap on sides */
       max-width: 900px;
     }
     .topbar {
@@ -93,11 +93,12 @@
       gap: 1.5rem;
       flex-wrap: wrap;
       margin-bottom: 1rem;
-      padding: 1rem;
+      padding: 1rem 0;
     }
     .profile img {
       width: 160px;
       border-radius: 8px;
+      flex-shrink: 0;
     }
     .profile-info {
       flex: 1;
@@ -127,8 +128,8 @@
       margin-left: 1rem;
     }
     .icons a img {
-      width: 30px;
-      height: 30px;
+      width: 32px; /* Slightly increased size */
+      height: 32px;
     }
     main h2 {
       font-size: 1.6rem;
