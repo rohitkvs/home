@@ -14,6 +14,7 @@
       background: #ffffff;
       color: #000000;
       line-height: 1.6;
+      text-align: justify;
     }
     .topbar {
       background-color: #cc0000; /* NC State red */
@@ -82,17 +83,22 @@
     }
     .profile {
       display: flex;
-      align-items: flex-start;
+      align-items: stretch;
       gap: 1.5rem;
       flex-wrap: wrap;
       margin-bottom: 1rem;
     }
     .profile img {
-      width: 180px;
+      width: 160px;
       border-radius: 8px;
+      object-fit: cover;
     }
     .profile-info {
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
     }
     .profile-info h2 {
       font-size: 1.2rem;
@@ -104,17 +110,15 @@
       margin: 0.3rem 0;
     }
     .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
       margin-top: 1rem;
+      align-items: flex-start;
     }
-    .links a {
-      display: inline-block;
-      margin-right: 0.5rem;
-      text-decoration: none;
-    }
-    .links img {
-      width: 22px;
-      height: 22px;
-      vertical-align: middle;
+    .links a img {
+      width: 20px;
+      height: 20px;
     }
     main h2 {
       font-size: 1.6rem;
@@ -144,6 +148,10 @@
       .profile-info h2 {
         text-align: center;
       }
+      .links {
+        flex-direction: row;
+        justify-content: center;
+      }
     }
   </style>
 </head>
@@ -167,10 +175,12 @@
   <div class="profile">
     <img src="profile_picture.jpg" alt="K V S Rohit's Photo">
     <div class="profile-info">
-      <h2>Ph.D. Candidate | Intelligent Wireless Networking Lab, NC State University</h2>
-      <p>I am a Ph.D. Candidate in the Department of Electrical and Computer Engineering at NC State University, where I am a Graduate Research Assistant in the Intelligent Wireless Networking Lab, led by <a href="https://slin23.github.io/" target="_blank">Prof. Shih-Chun Lin</a>.</p>
-      <p>Email: vkanthe [at] ncsu [dot] edu</p>
-      <p>Phone: (984) 484-4994</p>
+      <div>
+        <h2>Intelligent Wireless Networking Lab, NC State University</h2>
+        <p>I am a Ph.D. Candidate in the Department of Electrical and Computer Engineering at NC State University, where I am a Graduate Research Assistant in the Intelligent Wireless Networking Lab, led by <a href="https://slin23.github.io/" target="_blank">Prof. Shih-Chun Lin</a>.</p>
+        <p>Email: vkanthe [at] ncsu [dot] edu</p>
+        <p>Phone: (984) 484-4994</p>
+      </div>
       <div class="links">
         <a href="https://scholar.google.com/citations?user=1rNwKrwAAAAJ&hl=en" target="_blank"><img src="Google_Scholar_logo.svg" alt="Google Scholar"></a>
         <a href="https://linkedin.com/in/rohitkvs" target="_blank"><img src="linkedin_logo.png" alt="LinkedIn"></a>
