@@ -16,46 +16,43 @@
       line-height: 1.6;
     }
     header {
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin-bottom: 2rem;
+      position: relative;
     }
     header img {
       max-width: 220px;
       height: auto;
-      display: block;
-      margin: 0 auto 1rem auto;
+      margin-bottom: 1rem;
     }
-    header h1 {
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .header-top h1 {
       font-size: 2.2rem;
       margin: 0.5rem 0;
       color: #222;
     }
-    header h2 {
-      font-size: 1.2rem;
-      font-weight: 400;
-      color: #444;
-      margin: 0;
+    .hamburger {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #cc0000;
     }
     nav {
-      text-align: center;
-      margin-top: 1rem;
-    }
-    .dropdown {
-      display: inline-block;
       position: relative;
-    }
-    .dropbtn {
-      background-color: #cc0000;
-      color: white;
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      border-radius: 4px;
+      display: inline-block;
     }
     .dropdown-content {
       display: none;
       position: absolute;
+      right: 0;
       background-color: #f9f9f9;
       min-width: 160px;
       box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
@@ -70,11 +67,8 @@
     .dropdown-content a:hover {
       background-color: #f1f1f1;
     }
-    .dropdown:hover .dropdown-content {
+    nav:hover .dropdown-content {
       display: block;
-    }
-    .dropdown:hover .dropbtn {
-      background-color: #a80000;
     }
     .profile {
       display: flex;
@@ -126,7 +120,7 @@
       .profile img {
         width: 150px;
       }
-      header h1 {
+      .header-top h1 {
         font-size: 1.8rem;
       }
     }
@@ -135,16 +129,16 @@
 <body>
   <header>
     <img src="ncstate-logo-red.png" alt="NC State University Logo">
-    <h1>K V S Rohit</h1>
-    <h2>Ph.D. Candidate | Intelligent Wireless Networking Lab, NC State University</h2>
-    <nav>
-      <div class="dropdown">
-        <button class="dropbtn">Menu</button>
+    <div class="header-top">
+      <h1>K V S Rohit</h1>
+      <nav>
+        <button class="hamburger">&#9776;</button>
         <div class="dropdown-content">
           <a href="publications.html">Publications</a>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
+    <h2>Ph.D. Candidate | Intelligent Wireless Networking Lab, NC State University</h2>
   </header>
 
   <div class="profile">
@@ -163,7 +157,7 @@
   <main>
     <h2>About Me</h2>
     <p>My research involves building proof-of-concept hardware testbeds focused on signal detection and processing in spatially distributed systems for beyond 5G systems, in close collaboration with industry partners. This work has direct applications in satellite swarm communications, tactical communications, and commercial distributed systems. I implemented these solutions on USRP SDRs with over-the-air data transfers. We have published several papers on these topics so far, which use different versions of USRPs, with primary focus on X310 and B210 deployments. We have a few conferences and journals underway in these topics. I am currently working on extending my testbeds towards building distributed transceiver operations for beamforming and geolocation,  with an aim to build capabilities suitable for integrated sensing and communication frameworks.</p>
-	
+  	
 	<p>In the past, I also implemented some automatic modulation classification and deep-learning-based LDPC channel coding on USRP deployments.</p>
 
     <p>In addition to research, I have actively contributed to teaching. I served as a teaching assistant for the following courses at NC State University:</p>
