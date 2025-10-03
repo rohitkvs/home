@@ -8,193 +8,98 @@
   <style>
     body {
       font-family: 'Roboto', sans-serif;
-      max-width: 960px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 2rem;
-      background: #ffffff url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background: #ffffff;
       color: #000000;
-    }
-    .banner {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    .banner img {
-      max-width: 300px;
-      height: auto;
+      line-height: 1.6;
     }
     header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 4px solid #cc0000;
-      padding-bottom: 1rem;
+      text-align: center;
+      margin-bottom: 2rem;
     }
     header h1 {
-      font-size: 2rem;
-      color: #cc0000;
+      font-size: 2.2rem;
+      margin: 0.5rem 0;
+      color: #222;
+    }
+    header h2 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #444;
       margin: 0;
-    }
-    .dropdown {
-      position: relative;
-    }
-    .menu-icon {
-      font-size: 24px;
-      cursor: pointer;
-      background: none;
-      border: none;
-      outline: none;
-      color: #cc0000;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      right: 0;
-      background-color: #ffffff;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-    }
-    .dropdown-content a {
-      color: #cc0000;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-    .dropdown-content a:hover {
-      background-color: #f1f1f1;
-    }
-    .dropdown.active .dropdown-content {
-      display: block;
     }
     .profile {
       display: flex;
       align-items: flex-start;
-      justify-content: flex-start;
-      margin-top: 2rem;
+      gap: 1.5rem;
       flex-wrap: wrap;
+      margin-bottom: 2rem;
     }
     .profile img {
-      width: 200px;
-      height: auto;
+      width: 180px;
       border-radius: 8px;
+    }
+    .profile-info {
+      flex: 1;
+    }
+    .profile-info p {
+      margin: 0.4rem 0;
+    }
+    .links {
+      margin-top: 1rem;
+    }
+    .links a {
       margin-right: 1rem;
-      margin-bottom: 1rem;
+      text-decoration: none;
     }
-    .profile-info-wrapper {
-      display: flex;
-      flex-direction: row;
-      gap: 1rem;
-      align-items: stretch;
+    .links img {
+      width: 22px;
+      height: 22px;
+      vertical-align: middle;
     }
-    .profile-text-box {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 1rem;
-      border-radius: 8px;
-      max-width: 500px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .profile-links-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      gap: 0.5rem;
-      padding-top: 1rem;
-    }
-    .profile-links-box a img {
-      width: 20px;
-      height: 20px;
-    }
-    .profile-text-box h2 {
-      margin-top: 0;
-    }
-    .profile-text-box p {
-      margin: 0.25rem 0;
-    }
-    main {
+    main h2 {
+      font-size: 1.5rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
       margin-top: 2rem;
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 1rem 2rem;
-      border-radius: 8px;
     }
     footer {
       margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #666;
-      border-top: 1px solid #ddd;
-      padding-top: 1rem;
+      font-size: 0.85rem;
+      color: #555;
       text-align: center;
     }
     @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .dropdown {
-        width: 100%;
-        margin-top: 1rem;
-      }
       .profile {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
       }
       .profile img {
-        max-width: 100%;
+        width: 150px;
       }
-      .profile-info-wrapper {
-        flex-direction: column;
-      }
-      main {
-        padding: 1rem;
-      }
-      .banner img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
+      header h1 {
+        font-size: 1.8rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="banner">
-    <img src="ncstate-logo.png" alt="NC State University Logo">
-  </div>
-
   <header>
-    <h1>K V S Rohit | iWN Lab</h1>
-    <div class="dropdown" id="dropdown">
-      <button class="menu-icon" id="menu-icon">&#9776;</button>
-      <div class="dropdown-content" id="dropdown-content">
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="service.html">Service</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
+    <h1>K V S Rohit</h1>
+    <h2>Ph.D. Candidate | Intelligent Wireless Networking Lab, NC State University</h2>
   </header>
 
   <div class="profile">
-    <img src="my-photo.jpg" alt="K V S Rohit's Photo">
-    <div class="profile-info-wrapper">
-      <div class="profile-text-box">
-        <h2>Welcome!</h2>
-        <p>I am a Ph.D. Candidate in the Department of Electrical and Computer Engineering at NC State University, where I am a Graduate Research Assistant in the Intelligent Wireless Networking Lab, lead by <a href="https://slin23.github.io/" target="_blank">Prof. Shih-Chun Lin</a>.</p>
-        <p>Email address: vkanthe [at] ncsu [dot] edu</p>
-        <p>Phone: (984)484-4994</p>
-      </div>
-      <div class="profile-links-box">
-        <a href="https://scholar.google.com/citations?user=1rNwKrwAAAAJ&hl=en" target="_blank">
-          <img src="google-scholar.png" alt="Google Scholar">
-        </a>
-        <a href="www.linkedin.com/in/rohitkvs" target="_blank">
-          <img src="linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://instagram.com" target="_blank">
-          <img src="instagram.png" alt="Instagram">
-        </a>
+    <img src="profile_picture.jpg" alt="K V S Rohit's Photo">
+    <div class="profile-info">
+      <p>I am a Ph.D. Candidate in the Department of Electrical and Computer Engineering at NC State University, where I am a Graduate Research Assistant in the Intelligent Wireless Networking Lab, led by <a href="https://slin23.github.io/" target="_blank">Prof. Shih-Chun Lin</a>.</p>
+      <p>Email: vkanthe [at] ncsu [dot] edu</p>
+      <p>Phone: (984) 484-4994</p>
+      <div class="links">
+        <a href="https://scholar.google.com/citations?user=1rNwKrwAAAAJ&hl=en" target="_blank"><img src="google-scholar.png" alt="Google Scholar"></a>
+        <a href="https://linkedin.com/in/rohitkvs" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
       </div>
     </div>
   </div>
@@ -213,31 +118,10 @@
     <p>Prior to joining NC State, I worked as a Junior Research Fellow at IIT Roorkee in 2019 on a smart grid project titled <em>D-SIDES</em>. I also served as a part-time Senior Research Fellow at NIT Rourkela in 2020, where I helped develop an Android application as part of a COVID-19 emergency response system.</p>
 
     <p>Before my academic career, I worked as a Technology Manager at Atria Convergence Technologies Pvt. Ltd., one of India’s leading internet service providers.</p>
-
-    <p>To learn more about my research, publications, and contact information, please explore the other sections of this website.</p>
   </main>
 
   <footer>
     <p>&copy; 2025 Venkata Srirama Rohit Kantheti | NC State University</p>
   </footer>
-
-  <script>
-    const menuIcon = document.getElementById('menu-icon');
-    const dropdown = document.getElementById('dropdown');
-    const dropdownContent = document.getElementById('dropdown-content');
-
-    menuIcon.addEventListener('click', (event) => {
-      event.stopPropagation();
-      dropdown.classList.toggle('active');
-      menuIcon.innerHTML = dropdown.classList.contains('active') ? '&times;' : '&#9776;';
-    });
-
-    document.addEventListener('click', (event) => {
-      if (!dropdown.contains(event.target)) {
-        dropdown.classList.remove('active');
-        menuIcon.innerHTML = '&#9776;';
-      }
-    });
-  </script>
 </body>
 </html>
