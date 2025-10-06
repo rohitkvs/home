@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications</title>
+  <title>Services</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -116,42 +116,32 @@
   <div class="content-wrapper">
     <header>
       <div class="header-top">
-        <h1>Publications</h1>
+        <h1>Services</h1>
         <nav>
           <button class="hamburger">&#9776;</button>
           <div class="dropdown-content">
             <a href="index.html">Home</a>
-			<a href="services.html">Services</a>
+			<a href="publications.html">Publications</a>
           </div>
         </nav>
       </div>
     </header>
 
     <main>
-      <h2>Journals</h2>
-      <ol>
-		<li><strong>V. S. R. Kantheti</strong>, L. C. Chu, and S.-C. Lin, “<em>Anti-Jamming MIMO LEO Satellite Swarm Communications</em>,” <strong>submitted to IEEE Transactions on Wireless Communications</strong>.</li>
-        <li>C.-H. Lin, <strong>V. S. R. Kantheti</strong>, S.-C. Lin, and L. C. Chu, “<em>6G-AUTOR: Autonomic CSI-Free Transceiver via Realtime On-Device Signal Analytics</em>,” <strong>Journal of Signal Processing Systems</strong>, May 2023.</li>
-      </ol>
-
-      <h2>Conferences</h2>
-      <ol>
-        <li>Sambrama, <strong>V. S. R. Kantheti</strong>, S.-C. Lin, L. C. Chu, and E. Blasch, “<em>Hardware-in-the-Loop Implementation of Distributed SDR Systems and Throughput-Optimal Coordinated Transmissions</em>,” in <strong>Proc. of IEEE DySPAN Workshop</strong>, Washington, DC, USA, May 2024.</li>
-		<li><strong>V. S. R. Kantheti</strong>, S.-C. Lin, and L. C. Chu, “<em>Anti-Jamming Resilient LEO Satellite Swarms</em>,” in <strong>Proc. of IEEE MILCOM Workshop</strong>, Boston, MA, USA, October 2023.</li>
-        <li><strong>V. S. R. Kantheti</strong>, S.-C. Lin, and L. C. Chu, “<em>SPELS: Scalable and Programmable Testbed for Evaluating LEO Satellite Swarm Communications</em>,” in <strong>Proc. of IEEE INFOCOM Workshop</strong>, New York area, USA, May 2023.</li>
-      </ol>
+	  <h2>Technical Program Committee Member</h2>
+	  <ul>
+		<li>2023 26th International Symposium on Wireless Personal Multimedia Communications (WPMC), Track 6 - IoT, Sensor Networks, and AI-Enabled Networks, 19 November - 23 November, Tampa, USA.</li>
+	  </ul>
 	  
-	  <h2>Awards and Posters</h2>
-      <ol>
-		<li><strong>Runner-up</strong>, “Multimedia Transmission with Distributed Wireless Systems,” 2023-2024 Software Design Radio (SDR) Challenge, Air Force Research Laboratory (AFRL) 2024.</li>
-        <li><strong>Finalist</strong>, “Data-Driven Modulation and Coding for Beyond 5G Communications,” 4th Annual Beyond 5G SDR University Challenge, AFRL 2022.</li>
-		<li>E. Ozturk, <strong>V. S. R. Kantheti</strong>, D. Yang, and A. Singh, “LoRa/LoRaWAN Experiment Support Plans for AERPAW,” in <strong>AERPAW Fall 2021 Event</strong>, NC State University, Raleigh, USA, November 2021.</li>
-      </ol>
 	  
-	  <h2>Patents</h2>
-      <ol>
-        <li>Nalini Kanta Barpanda, Santos Kumar Das, and <strong>Venkata Srirama Rohit Kantheti</strong>, “<em>INTERNET OF THINGS (IOT) ENABLED SENSOR CALIBRATION SYSTEM</em>,” <strong>Indian Patent Office</strong>, Patent number: 328714, December 2019.</li>
-      </ol>
+	  <h2>Reviewer</h2>
+      <ul>
+        <li>IEEE Military Communications Conference (MILCOM) 2025, Track 1 - Waveforms and Signal Processing, 06 October - 10 October 2025, Washington DC, USA.</li>
+		<li>IEEE Military Communications Conference (MILCOM) 2024, Track 1 - Waveforms and Signal Processing, 28 October - 01 November 2024, Washington DC, USA.</li>
+		<li>IEEE Global Communications Conference (GLOBECOM) 2024 Workshops, Space Computing Power Networks (SCPN), 08 December - 12 December 2024, Cape Town, South Africa.</li>
+		<li>IEEE MILCOM 2024 Young Scholars Workshop (YSW), 28 October - 01 November 2024, Washington DC, USA.</li>
+		<li>2023 26th International Symposium on Wireless Personal Multimedia Communications (WPMC), Track 6 - IoT, Sensor Networks, and AI-Enabled Networks, 19 November - 23 November, Tampa, USA.</li>
+      </ul>
     </main>
 
     <footer>
